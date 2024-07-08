@@ -7,6 +7,7 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/asset 42.png" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -22,7 +23,8 @@
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
-            <div class="nav-links">
+            
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-links">Products</a></li>
                     <li><a href="#" class="hover-links">Customer</a></li>
@@ -31,6 +33,12 @@
                     <li><a href="#" class="hover-links secondary-btn">Sign in</a></li>
                     <li><a href="#" class="hover-links primary-btn">Sign up</a></li>
                 </ul>
+            </div>
+
+            <div>
+                <a href="#" class="nav-menu-icon hover-links" id="nav-toggle" >
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -127,14 +135,19 @@
                         <p class="member-desc">The navigation test is god's gift to UI designers, it probably has the
                             best power-to-simplicity ratio of any software, ever.</p>
                         <img src="./assets/nick.png" alt="" class="team-member-img">
+                        <div class="team-member-info">
                         <h4>Nick Franklin</h4>
                         <p class="team-role">Chief Executive Officer</p>
+                    </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="big-feature-section">
-            <div class="container flex big-feature-container">
+            <div class="container flex big-feature-container reverse-img">
+                <div class="big-feature-image">
+                    <img src="./assets/asset 21.png" alt="" >
+                </div>
                 <div class="big-feature-discription flex">
                     <h4>Optimisation for</h4>
                     <h3>Marketers</h3>
@@ -145,12 +158,11 @@
                         <p class="member-desc">We use UsabilityHub tests to help us make decisions for various projects.
                             From web and mobile design to marketing activities.</p>
                         <img src="./assets/rick.png" alt="" class="team-member-img">
+                        <div class="team-member-info">
                         <h4>Rick van de Ven</h4>
                         <p class="team-role">Digital Marketing Analyst</p>
                     </div>
-                </div>
-                <div class="big-feature-image">
-                    <img src="./assets/asset 21.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -169,8 +181,10 @@
                         <p class="member-desc">Adopting UsabilityHub got us into the habit of asking our users questions
                             before locking in decisions.</p>
                         <img src="./assets/nick.png" alt="" class="team-member-img">
+                        <div class="team-member-info">
                         <h4>Ron Diorio</h4>
                         <p class="team-role">VP Innovation & New Products</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -204,9 +218,11 @@
         <section class="cta-section">
             <div class="container flex cta-section-container">
                 <div class="cta-desc flex">
+                    <div class="cta-responsive">
                 <h2>No participants?</h2>
                 <h2>No problem.</h2>
                 <p>Our integrated panel allows you to quickly and affordably recruit research participants that precisely match your target audience.</p>
+                </div>
                 <h4>Our panel includes:</h4>
                 <div class="cta-content flex">
                     <ul class="cta-content-left">
@@ -278,9 +294,11 @@
 
         <div class="sub-footer">
             <div class="container flex sub-links">
+                <div class="sub-foot-response flex sub-links">
                 <a href="#" class="hover-links">Privacy policy</a>
                 <a href="#" class="hover-links">Terms & conditions</a>
                 <a href="#" class="hover-links">Security information</a>
+            </div>
                 <a href="#" class="hover-links"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" class="hover-links"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#" class="hover-links"><i class="fa-brands fa-linkedin"></i></a>
@@ -289,6 +307,16 @@
         </div>
 
         <script src="https://kit.fontawesome.com/5e9a409ed6.js" crossorigin="anonymous"></script>
+        
+        <script>
+            const togglebutton = document.getElementById('nav-toggle');
+            const navlinks = document.getElementById('nav-links');
+
+            togglebutton.addEventListener('click', () =>{
+                navlinks.classList.toggle('active');
+            })
+        </script>
+
 </body>
 
 </html>

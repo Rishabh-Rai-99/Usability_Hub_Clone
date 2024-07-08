@@ -54,6 +54,7 @@ a{
     max-width: 1080px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 
 .flex{
@@ -72,6 +73,7 @@ ul{
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
+    text-align: center;
 }
 
 .primary-btn:hover{
@@ -113,10 +115,12 @@ ul{
 .main-nav{
     margin-top: 10px;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-links{
     flex-basis: 730px;
+    display: block;
 }
 
 .nav-links ul{
@@ -131,6 +135,10 @@ ul{
 .hover-links:hover{
     color: var(--accent-color);
     transition: 0.2s ease-out;
+}
+
+.nav-menu-icon{
+    display:none;
 }
 
 /* header section */
@@ -167,12 +175,12 @@ header{
 
 .comp-header{
     text-align: center;
-    margin-block: 30px;
+    margin-block: 50px;
     color: var(--primary-text-color);
 }
 
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .logo{
@@ -211,6 +219,7 @@ header{
     flex-direction: column;
     max-width: 30%;
     gap: 20px;
+    text-align: center;
 }
 .features-card p{
     text-align: center;
@@ -232,12 +241,19 @@ header{
 .big-feature-image img{
     width: 100%;
 }
+.reverse-img{
+    flex-direction: row-reverse;
+}
 .big-feature-discription{
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
 }
 
+.team-member{    
+    flex-direction: column;
+    align-items: start;
+}
 .team-member-name{
     height: 38.5px;
 }
@@ -274,6 +290,7 @@ header{
 .examples-area{
     justify-content: space-between;
     margin-block: 30px;
+    flex-wrap: wrap;
 }
 .examples-card{
     width: 23%;
