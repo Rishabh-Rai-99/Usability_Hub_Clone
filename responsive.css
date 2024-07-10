@@ -151,6 +151,6 @@
 }
 @media screen and (max-width: 410px){
     .rating label {
-        font-size: 1.2rem; /* Further decrease font size for very small screens */
+        font-size: 1rem; /* Further decrease font size for very small screens */
     }
 }
