@@ -292,6 +292,20 @@
             </div>
         </footer>
 
+        <div class="container form">
+            <h3>Rate this Website</h3>
+            <form class="rating-form">
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">&#9733;</label>
+                </fieldset>
+            </form>
+            <ul>    <li><a href="#" class="hover-links primary-btn " id="signupButton">submit</a></li></ul>
+        </div>
+
         <div class="sub-footer">
             <div class="container flex sub-links">
                 <div class="sub-foot-response flex sub-links">
@@ -316,6 +330,38 @@
                 navlinks.classList.toggle('active');
             })
         </script>
+
+        <!-- rating -->
+        <div id="videoContainer" style="display: none;">
+            <video id="clickVideo" src="Y2meta.app-Sigma Males��_ Gigachad Theme _ Alight Motion Preset��-(1080p) (online-video-cutter.com).mp4" preload="auto" width="640" height="360"></video>
+            <span id="closeButton">&times;</span>
+        </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('signupButton');
+    const videoContainer = document.getElementById('videoContainer');
+    const clickVideo = document.getElementById('clickVideo');
+    const closeButton = document.getElementById('closeButton');
+
+    button.addEventListener('click', function() {
+        videoContainer.style.display = 'block';
+        clickVideo.play();
+    });
+
+    closeButton.addEventListener('click', function() {
+        clickVideo.pause();
+        clickVideo.currentTime = 0;
+        videoContainer.style.display = 'none';
+    });
+
+    clickVideo.addEventListener('ended', function() {
+        videoContainer.style.display = 'none';
+    });
+});
+
+            </script>
+
 
 </body>
 

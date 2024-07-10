@@ -142,4 +142,10 @@
     .cta-img{
         display: none;
     }
+
+    /* rating */ 
+    
+    .rating label {
+        font-size: 2rem; /* Further decrease font size for very small screens */
+    }
 }
