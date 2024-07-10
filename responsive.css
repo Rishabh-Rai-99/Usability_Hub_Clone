@@ -149,8 +149,9 @@
         font-size: 2rem; /* Further decrease font size for very small screens */
     }
 }
-@media screen and (max-width: 410px){
+@media screen and (max-width: 370px){
     .rating label {
-        font-size: 1rem; /* Further decrease font size for very small screens */
+        font-size: 1.5rem; /* Further decrease font size for very small screens */
+        width: 10px;
     }
 }
