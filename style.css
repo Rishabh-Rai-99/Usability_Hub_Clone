@@ -477,8 +477,10 @@ footer{
     margin-bottom: 20px;
 }
 
+/* sub-footer-changes */
 .pop-up{
     transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 .pop-up:hover{
     transform: translateY(-5px);
