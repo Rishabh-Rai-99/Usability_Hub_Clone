@@ -405,6 +405,7 @@ footer{
 
 .sub-links{
     justify-content: center;
+    padding-block: 10px;
     gap: 25px;
 }
 
@@ -474,4 +475,24 @@ footer{
 
 #signupButton{
     margin-bottom: 20px;
+}
+
+.pop-up{
+    transition: all 0.3s ease-out;
+}
+.pop-up:hover{
+    transform: translateY(-5px);
+    font-size: 1.4rem;
+}
+.fa-facebook:hover{
+    color: #1877F2;
+}
+.fa-x-twitter:hover{
+    color: #000000;
+}
+.fa-linkedin:hover{
+    color: #0077B5;
+}
+.fa-youtube:hover{
+    color:#FF0000;
 }
